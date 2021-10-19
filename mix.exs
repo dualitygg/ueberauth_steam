@@ -51,7 +51,7 @@ defmodule UeberauthSteam.Mixfile do
       # Dependencies
       {:httpoison, "~> 1.8"},
       {:poison, "~> 5.0"},
-      {:ueberauth, "~> 0.6"},
+      {:ueberauth, "~> 0.7"},
 
       # Testing
       {:meck, "~> 0.9.2", only: :test},

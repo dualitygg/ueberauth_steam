@@ -3,7 +3,7 @@ defmodule Ueberauth.Strategy.Steam do
   Steam OpenID for Überauth.
   """
 
-  use Ueberauth.Strategy
+  use Ueberauth.Strategy, ignores_csrf_attack: true
 
   alias Ueberauth.Auth.Info
   alias Ueberauth.Auth.Extra
@@ -115,7 +115,7 @@ defmodule Ueberauth.Strategy.Steam do
       "https://steamcommunity.com/openid/id/" <> id -> id
       _ -> raise "claimed_id matching error"
     end
-    
+
     key =
       :ueberauth
       |> Application.fetch_env!(Ueberauth.Strategy.Steam)
