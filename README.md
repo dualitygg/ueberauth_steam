@@ -9,6 +9,8 @@
 
 > Steam OpenID strategy for Überauth.
 
+This is a forked version with dependencies updates and csrf fix for uberauth 0.7.
+
 ## Installation
 
 1. Obtain an Steam Web API Key at [Steam Dev](https://steamcommunity.com/login/home/?goto=%2Fdev%2Fapikey).
@@ -17,7 +19,7 @@
 
     ```elixir
     def deps do
-      [{:ueberauth_steam, "~> 0.1.2", github: "IAmThermite/ueberauth_steam"},]
+      [{:ueberauth_steam, "~> 0.1.2", github: "dualitygg/ueberauth_steam"},]
     end
     ```
 
