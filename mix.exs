@@ -49,8 +49,8 @@ defmodule UeberauthSteam.Mixfile do
   defp deps do
     [
       # Dependencies
-      {:httpoison, "~> 1.6"},
-      {:poison, "~> 3.1"},
+      {:httpoison, "~> 1.8"},
+      {:poison, "~> 5.0"},
       {:ueberauth, "~> 0.6"},
 
       # Testing
@@ -58,10 +58,10 @@ defmodule UeberauthSteam.Mixfile do
 
       # Code Maintenance
       {:credo, "~> 1.5", only: [:dev, :test]},
-      {:dialyxir, "~> 0.5", only: [:dev], runtime: false},
-      {:ex_doc, "~> 0.15", only: :dev},
-      {:excoveralls, "~> 0.6", only: :test},
-      {:inch_ex, "~> 0.5", only: [:dev, :test]},
+      {:dialyxir, "~> 1.1", only: [:dev], runtime: false},
+      {:ex_doc, "~> 0.25", only: :dev},
+      {:excoveralls, "~> 0.14", only: :test},
+      {:inch_ex, "~> 2.0", only: [:dev, :test]},
     ]
   end
 end
