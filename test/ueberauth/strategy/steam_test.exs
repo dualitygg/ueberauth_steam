@@ -7,13 +7,13 @@ defmodule Ueberauth.Strategy.SteamTest do
   @sample_user %{avatar: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f3/f3dsf34324eawdasdas3rwe.jpg",
        avatarfull: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f3/f3dsf34324eawdasdas3rwe_full.jpg",
        avatarmedium: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f3/f3dsf34324eawdasdas3rwe_medium.jpg",
-       communityvisibilitystate: 1, lastlogoff: 234234234, loccityid: 36148,
+       communityvisibilitystate: 1, lastlogoff: 234_234_234, loccityid: 36_148,
        loccountrycode: "NL", locstatecode: "03", personaname: "Sample",
        personastate: 0, personastateflags: 0,
        primaryclanid: "435345345", profilestate: 1,
        profileurl: "http://steamcommunity.com/id/sample/",
        realname: "Sample Sample", steamid: "765309403423",
-       timecreated: 452342342}
+       timecreated: 452_342_342}
   @sample_response %{response: %{players: [@sample_user]}}
   @optional_fields [:loccountrycode, :realname]
 
@@ -156,7 +156,7 @@ defmodule Ueberauth.Strategy.SteamTest do
     end
 
     test "uid", %{conn: conn} do
-      assert Steam.uid(conn) == 765309403423
+      assert Steam.uid(conn) == 765_309_403_423
     end
 
     test "info", %{conn: conn} do
