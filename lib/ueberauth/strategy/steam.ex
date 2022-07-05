@@ -156,8 +156,4 @@ defmodule Ueberauth.Strategy.Steam do
   @doc false
   @spec credentials(Plug.Conn.t) :: Ueberauth.Auth.Credentials.t
   def credentials(_conn), do: %Ueberauth.Auth.Credentials{}
-
-  @doc false
-  @spec auth(Plug.Conn.t) :: Ueberauth.Auth.t
-  def auth(conn)
 end
